@@ -15,7 +15,5 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cat lib/vimrc_template >> ~/.vimrc
 
-# setup credentials directory
-mkdir ~/.aws/
-vim ~/.aws/credentials
+cat zsh >> ~/.bashrc
 

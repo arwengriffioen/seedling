@@ -1,3 +1,5 @@
-ZSH_THEME='blinks'
+
 alias setpy='export PYTHONPATH=$PWD/virtual_env/lib/python2.7/site-packages:$PYTHONPATH'
 alias vim='setpy && vim'
+
+ZSH_THEME='blinks'
