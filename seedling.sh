@@ -4,6 +4,7 @@ clear
 # Install Oh My Zsh
 echo "NO PASSWORD" | bash <(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)
 cat ~/code/seedling/lib/zshrc_additions >> ~/.zshrc
+sed -i 's/ZSH_THEME=.*/ZSH_THEME="blinks"/' ~/.zshrc
 source ~/.zshrc
 
 # Install Ultimate VIM
