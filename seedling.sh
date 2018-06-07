@@ -7,6 +7,8 @@ sg aha-team -c "aws s3 sync s3://zendesk-datascientists-intermediate-east/zsh/ ~
 export PATH=$HOME/.zsh:$PATH
 echo "export PATH=$HOME/.zsh:$PATH" >> ~/.bashrc
 
+# Install Oh My Zsh and set theme
+echo "NO PASSWORD" | bash <(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)
 cat ~/code/seedling/lib/zshrc_additions >> ~/.zshrc
 sed -i 's/ZSH_THEME=.*/ZSH_THEME="blinks"/' ~/.zshrc
 source ~/.zshrc
