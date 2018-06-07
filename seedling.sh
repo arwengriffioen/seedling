@@ -3,11 +3,9 @@ clear
 
 # Install Oh My Zsh
 # Download Zsh
-if ! [ -x "$(command -v zsh)" ]; then
-  sg aha-team -c "aws s3 sync s3://zendesk-datascientists-intermediate-east/zsh/ ~/.zsh/ && chmod +x ~/.zsh/zsh && chmod -R g-w,o-w ~/.zsh/share"
-  export PATH=$HOME/.zsh:$PATH
-  echo "export PATH=$HOME/.zsh:$PATH" >> ~/.bashrc
-fi
+sg aha-team -c "aws s3 sync s3://zendesk-datascientists-intermediate-east/zsh/ ~/.zsh/ && chmod +x ~/.zsh/zsh && chmod -R g-w,o-w ~/.zsh/share"
+export PATH=$HOME/.zsh:$PATH
+echo "export PATH=$HOME/.zsh:$PATH" >> ~/.bashrc
 
 cat ~/code/seedling/lib/zshrc_additions >> ~/.zshrc
 sed -i 's/ZSH_THEME=.*/ZSH_THEME="blinks"/' ~/.zshrc
