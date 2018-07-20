@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 
-isZendesk=false
+isZendesk=true
 
 # Download Zsh
 if ! [ -x "$(command -v zsh)" ]; then
